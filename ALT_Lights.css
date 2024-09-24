@@ -1,0 +1,213 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.parent{
+    height: 550svh;
+    width: 100%;
+    /* background-color: gainsboro; */
+}
+
+.page1{
+    height:fit-content;
+    width: 100%;
+    background-image: url(https://www.altlights.com/assets/img/Day_Colored.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    aspect-ratio: 2/1.1;
+    position: relative;
+}
+
+#p1{
+    /* margin-top: 190px;
+    margin-left: 100px; */
+    position: absolute;
+    top: 29%;
+    left: 10%;
+    color: white;
+    font-size: 3.7svw;
+    font-weight: 900;
+    font-stretch: extra-condensed;
+    font-family: "Teko", sans-serif;
+}
+#p2{
+    /* margin-top: 230px;
+    margin-left: 100px; */
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    color: white;
+    font-size: 3.7svw;
+    font-weight: 900;
+    font-stretch: extra-condensed;
+    font-family: "Teko", sans-serif;
+}
+#p3{
+    /* margin-top: 270px;
+    margin-left: 100px; */
+    position: absolute;
+    top: 46%;
+    left: 10%;
+    color: white;
+    font-size: 1.7svw;
+    letter-spacing: -1px;
+    font-family:sans-serif;
+    font-style: oblique;
+    /* font-weight: 500; */
+    
+}
+
+.page1:hover{
+    background-image: url(https://www.altlights.com/assets/img/Night_Uncolored.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    aspect-ratio: 2/1.1;
+}
+
+.header{
+    height: 110px;
+    width: 100%;
+    background: linear-gradient(to bottom,#000000,#363232);
+    opacity: 90%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+}
+
+.header-options{
+    height: 98%;
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 2px white solid;
+    /* background-color: #C30000; */
+}
+
+.page1-logo{
+    height: 95%;
+    width: 8%;
+    display: flex;
+    justify-content:flex-end;
+    align-items:center;
+}
+
+.page1-logo>img{
+    height: 70px;
+    width: 150px;
+}
+
+.row-menu{
+    height: 90%;
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.options{
+    margin-top: 7px;
+    height: 100px;
+    width: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    letter-spacing: -1px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    font-stretch: condensed;
+}
+
+.options:hover{
+    border-bottom:4px solid #C30000;
+}
+
+.options-logo{
+    height: 100%;
+    width: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 50px;
+    display: none;
+}
+
+.optionss{
+    margin-top:-2px;
+    height: 10%;
+    width: 10%;
+    margin-left: 50px;
+    font-family: sans-serif;
+    letter-spacing: -1px;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    font-stretch: condensed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.optionss:hover{
+    color:red;
+}
+
+.column-menu{
+    height: 250px;
+    width: 100px;
+    position: absolute;
+    right: -10px;
+    top: 80px;
+    display: none;
+}
+
+.options-logo:hover .column-menu{
+    display: block;
+}
+
+
+@media only screen and (max-width:768px){
+    .header{
+        height: 45px;
+    }
+
+    .page1-logo>img{
+        height: 30px;
+        width: 70px;
+        position: absolute;
+        left: 20px;
+    }
+    .row-menu{
+        display: none;
+    }
+    .options-logo{
+        top: 20px;
+        right: 10px;
+        display: block;
+    }
+    .column-menu{
+        top: 36px;
+        right: -20px;
+    }
+}
+
+@media only screen and (max-width:450px){
+    #p1{
+        top: 42%;
+        left: 25%;
+        font-size: 24px;
+    }
+    #p2{
+        top: 57%;
+        left: 22%;
+        font-size: 24px;
+    }
+    #p3{
+        top: 80%;
+        left: 20%;
+        font-size: 13px;
+    }
+}

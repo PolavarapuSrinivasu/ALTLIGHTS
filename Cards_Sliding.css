@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.parent{
+    height: 90%;
+    width: 100%;
+    background-color: rgb(199, 199, 199);
+    position: relative;
+}
+
+/* .parent::before{
+    content: "";
+    height: 100%;
+    width: 80%;
+    background-color: rgb(99, 97, 97);
+    transform: skew(-10deg);
+    position: absolute;
+    left: 0px;
+    transition: all 2s linear;
+} */
+
+/* .parent:hover::before{
+    left: -700px;
+} */
+
+.parent1{
+    height: 100%;
+    width: 80%;
+    transform: skew(-10deg);
+    background-color: black;
+    position: absolute;
+    left: 0px;
+    transition: all 2s linear;
+}
+
+.parent1:hover{
+    left: -700px;
+}
+
+.parent2{
+    height: 100%;
+    width: 80%;
+    transform: skew(-10deg);
+    background-color: rgb(8, 10, 102);
+    position: absolute;
+    left: 100px;
+    transition: all 2s linear;
+}
+
+.parent2:hover{
+    left: -600px;
+}

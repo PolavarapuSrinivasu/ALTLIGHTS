@@ -1,0 +1,26 @@
+.page5{
+    height: 30svh;
+    width: 100%;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: center;   
+    align-items: end;
+}
+
+.bar{
+    height: 40%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.page5-img{
+    height: fit-content;
+    width: min-content;
+    background-repeat: no-repeat;
+}
+
+
+
